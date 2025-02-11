@@ -7,6 +7,7 @@ import SixMonthPage from "../Page/SixMonthPage";
 import SevenMonthPage from "../Page/SevenMonthPage";
 import TenMonthPage from "../Page/TenMonthPage";
 import HelpCenter from "../Page/HelpCenter";
+import HSC from "../Page/Hsc";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/helpCenter",
         element: <HelpCenter></HelpCenter>
+      },
+      {
+        path: "/hsc",
+        element: <HSC></HSC>
       }
     ],
   },

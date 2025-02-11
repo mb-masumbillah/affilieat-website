@@ -8,28 +8,32 @@ const NineMonthPage = () => {
 
   const courses = [
     {
-      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ [ ১ মাসের জন্য ]",
+      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ ",
+      month: "[ ১ মাসের জন্য ]",
       duration: "১ মাসের কোর্স",
       discount: 250,
       price: 2500,
       link: "https://10minuteschool.com/product/class-9-online-batch-2025/?aff=V2UNK0000ab53&utm_medium=affiliation&utm_source=43859&utm_campaign=null_undefined&utm_content=null&type=affiliate&sku_id=250184&promo=1monthob25",
     },
     {
-      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ [ ৩ মাসের জন্য ]",
+      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ ",
+      month: "[ ৩ মাসের জন্য ]",
       duration: "৩ মাসের কোর্স",
       discount: 3000,
       price: 8000,
       link: "https://10minuteschool.com/product/class-9-online-batch-2025/?aff=V2UNK0000ab53&utm_medium=affiliation&utm_source=43859&utm_campaign=null_undefined&utm_content=null&type=affiliate&sku_id=250185",
     },
     {
-      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ [ ৬ মাসের জন্য ]",
+      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ ",
+      month: "[ ৬ মাসের জন্য ]",
       duration: "৬ মাসের কোর্স",
       discount: 5000,
       price: 15000,
       link: "https://10minuteschool.com/product/class-9-online-batch-2025/?aff=V2UNK0000ab53&utm_medium=affiliation&utm_source=43859&utm_campaign=null_undefined&utm_content=null&type=affiliate&sku_id=250186&promo=6monthob25",
     },
     {
-      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫ [ পুরো বছরের জন্য ]",
+      title: "৯ম শ্রেণি – অনলাইন ব্যাচ ২০২৫",
+      month: "[ পুরো বছরের জন্য ]",
       duration: "১ বছরের কোর্স",
       discount: 14500,
       price: 27500,

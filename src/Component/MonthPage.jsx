@@ -16,7 +16,6 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
   const phoneNumber = "+8801726374365";
   const [showDemo, setDemoShow] = useState(false);
 
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 700) {
@@ -110,12 +109,12 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
     {
       title: "HSC 26 ব্যাচের ফ্রি লাইভ ক্লাস",
       img: "hsc.jpg",
-      link: "https://10ms.io/exlBaR"
+      link: "https://10ms.io/exlBaR",
     },
     {
       title: "৬ষ্ঠ-৯ম শ্রেণির ফ্রি লাইভ ক্লাস",
       img: "6-9.jpg",
-      link: "https://10ms.io/jxlBge"
+      link: "https://10ms.io/jxlBge",
     },
   ];
 
@@ -176,7 +175,7 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
           <div className="max-w-screen-xl mx-auto">
             <Marquee className="text-xl ">
               <div className="flex gap-3">
-                <span> ৬ষ্ঠ শ্রেণি থেকে ১০ম শ্রেণির</span>
+                <span> ৬ষ্ঠ শ্রেণি থেকে ১০ম শ্রেণির ও HSC এর </span>
                 <span className="text-green-400">
                   ১ মাস, ৩ মাস, ৬ মাস অথবা ১২ মাসের Course এর জন্য{" "}
                   {'"Get Discount"'} অপশন এ ক্লিক করুন
@@ -186,14 +185,16 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
             <div className="lg:w-[45rem]">
               <h2 className="text-2xl font-bold pt-5">{clssDes.className}</h2>
               <p className="mt-2 pt-3 text-gray-400">
-                গত চার বছর ধরে প্রায় দেড় হাজার স্কুল শিক্ষার্থীদের সাফল্যের
-                ধারাবাহিকতায় টেন মিনিট স্কুল নতুন বছরে নিয়ে এসেছে{" "}
-                {clssDes.className} ! অনলাইন ব্যাচ ২০২৫-এ ক্লাসের পড়া শেষ হবে
-                ক্লাসেই এবং নিয়মিত এক্সাম ও মেন্টরশিপের মাধ্যমে স্টুডেন্টদের
-                প্রস্তুতি হবে ১০০ তে ১০০ ! সর্বোপরি ক্লাস{" "}
-                {clssDes.className.split("")[1]}{clssDes.className.split("")[2]}-এর শিক্ষার্থীদের সারা বছরের
-                প্রস্তুতিতে সাহায্য করে তাদের লক্ষ্য পূরণ করবে তাদের বিশ্বস্ত
-                পার্টনার অনলাইন ব্যাচ!
+                {" "}
+                {clssDes?.details
+                  ? clssDes.details
+                  : `গত চার বছর ধরে প্রায় দেড় হাজার স্কুল শিক্ষার্থীদের সাফল্যের ধারাবাহিকতায় টেন মিনিট স্কুল নতুন বছরে নিয়ে এসেছে ${
+                      clssDes.className
+                    } ! অনলাইন ব্যাচ ২০২৫-এ ক্লাসের পড়া শেষ হবে ক্লাসেই এবং নিয়মিত এক্সাম ও মেন্টরশিপের মাধ্যমে স্টুডেন্টদের প্রস্তুতি হবে ১০০ তে ১০০ ! সর্বোপরি ক্লাস ${
+                      clssDes.className.split("")[1]
+                    }${
+                      clssDes.className.split("")[2]
+                    }-এর শিক্ষার্থীদের সারা বছরের প্রস্তুতিতে সাহায্য করে তাদের লক্ষ্য পূরণ করবে তাদের বিশ্বস্ত পার্টনার অনলাইন ব্যাচ!`}
               </p>
             </div>
           </div>
@@ -201,7 +202,11 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
         <div className="w-auto lg:hidden block bg-white shadow-lg rounded-lg p-2 border border-gray-200 mx-auto max-w-md">
           {/* Video Thumbnail */}
           <div className="relative w-full h-auto">
-            <img src={clssDes.img} alt="" className="h-full w-full" />
+            <img
+              src={clssDes.img}
+              alt=""
+              className="h-full w-full object-cover"
+            />
           </div>
 
           {/* Price */}
@@ -220,7 +225,7 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
                 showDemo ? "hidden" : "block"
               } w-full bg-green-600 text-white py-2 text-center rounded-md  font-semibold hover:bg-green-700`}
             >
-               ফ্রি ডেমো ক্লাস বুকিং করুন 😊
+              ফ্রি ডেমো ক্লাস বুকিং করুন 😊
             </Link>
             <Link
               onClick={() => setDemoShow(false)}
@@ -292,7 +297,7 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
             <div className="relative w-full h-[12.7rem]">
               <iframe
                 className="w-full h-full rounded-md"
-               src="https://www.youtube.com/embed/grQFoGGQk5U?si=Bc6eJFok17lubM4u"
+                src="https://www.youtube.com/embed/grQFoGGQk5U?si=Bc6eJFok17lubM4u"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
@@ -385,7 +390,11 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
             <div className="fixed right-[2rem] z-10 top-20 w-[24.4rem] bg-white shadow-lg rounded-lg p-2 border border-gray-200 mx-auto">
               {/* Video Thumbnail */}
               <div className="relative w-full h-[12.7rem]">
-                <img src={clssDes.img} alt="" className="h-full w-full" />
+                <img
+                  src={clssDes.img}
+                  alt=""
+                  className="h-full w-full object-cover"
+                />
               </div>
 
               {/* Price */}
@@ -405,7 +414,7 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
                     showDemo ? "hidden" : "block"
                   } w-full bg-green-600 text-white py-2 text-center rounded-md  font-semibold hover:bg-green-700`}
                 >
-                   ফ্রি ডেমো ক্লাস বুকিং করুন 😊
+                  ফ্রি ডেমো ক্লাস বুকিং করুন 😊
                 </Link>
                 <Link
                   onClick={() => setDemoShow(false)}
@@ -600,15 +609,23 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
         </div>
       </div>
       <div
-        className={`${
-          showDemo ? "mt-[680px]" : "mt-[380px]"
+        className={`${showDemo ? "mt-[680px]" : "mt-[380px]"} ${
+          clssDes.details && "mt-[1126px]"
         } max-w-screen-xl mx-auto relative lg:-mt-[420px]`}
       >
-        <figure className="hidden lg:block w-[40rem] h-[25rem] mt-8 ml-[4.5rem]">
-          <img src={clssDes.img} alt="" />
+        <figure className="hidden relative lg:block w-[40rem] h-[25rem] mt-8 ml-[4.5rem]">
+          <img
+            src={clssDes.img}
+            alt=""
+            className={`${
+              clssDes?.details
+                ? "absolute w-72 h-72 top-[8rem] right-10"
+                : "w-full h-full"
+            }`}
+          />
         </figure>
 
-        <div className="max-w-md mx-auto lg:mx-0 lg:max-w-[49.2rem] space-y-4">
+        <div className="max-w-md mx-auto lg:mx-0 lg:max-w-[49.2rem] mt-10 space-y-4">
           {courses.map((course, index) => (
             <Link
               to={course.link}
@@ -622,8 +639,8 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
                 <p className="text-gray-700 font-bold">TK Discount</p>
               </div>
               <div className="flex-1 px-6">
-                <h2 className="text-xl font-semibold text-green-700">
-                  {course.title}
+                <h2 className="text-xl  font-semibold text-green-700">
+                  {course.title} <br /> {course?.month}
                 </h2>
                 <p className="text-gray-700 mt-2">
                   {course.duration} - {course.price} টাকার কোর্সে পাচ্ছেন{" "}
@@ -639,7 +656,7 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
                 <button className="bg-green-600 w-full font-bold text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600 transition">
                   Get Discount
                 </button>
-                <p className="mt-2 bg-black text-white px-4 py-2 rounded-lg shadow-md">
+                <p className="mt-2 bg-black text-white px-4 py-2 text-center rounded-lg shadow-md">
                   {course.duration} কোর্স
                 </p>
               </div>
@@ -648,7 +665,11 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
         </div>
 
         <div>
-          <div className="pt-14 max-w-md mx-auto lg:mx-0 lg:max-w-[49.2rem]">
+          <div
+            className={`${
+              clssDes.details ? "hidden" : "block"
+            } pt-14 max-w-md mx-auto lg:mx-0 lg:max-w-[49.2rem]`}
+          >
             <h2 className="text-2xl font-bold mb-4">কোর্স এক্সক্লুসিভ ফিচার</h2>
             <div className="space-y-6">
               {features.map((feature, index) => (
@@ -675,47 +696,51 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
               ))}
             </div>
 
-            <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4 text-center">ক্লাস রুটিন</h2>
-      <div className="flex space-x-2 mb-4 overflow-x-auto">
-        {classes.map((cls) => (
-          <button
-            key={cls}
-            onClick={() => setActiveClass(cls)}
-            className={`px-4 py-2 rounded-lg border ${
-              activeClass === cls ? "bg-blue-500 text-white" : "bg-gray-200"
-            }`}
-          >
-            {cls}
-          </button>
-        ))}
-      </div>
-      <div className="overflow-x-auto">
-        <table className="w-full border border-gray-300 text-center">
-          <thead>
-            <tr className="bg-gray-100 border-b border-gray-300">
-              <th className="py-3 px-4 border-r">বার</th>
-              <th className="py-3 px-4 border-r">সন্ধ্যা ৬:৩০ টা</th>
-              <th className="py-3 px-4">রাত ৮:৩০টা</th>
-            </tr>
-          </thead>
-          <tbody>
-            {routines[activeClass]?.map((row, index) => (
-              <tr key={index} className="border-b border-gray-300">
-                {row.map((cell, idx) => (
-                  <td
-                    key={idx}
-                    className="py-3 px-4 border-r last:border-r-0"
+            <div className={`p-6`}>
+              <h2 className="text-2xl font-bold mb-4 text-center">
+                ক্লাস রুটিন
+              </h2>
+              <div className="flex space-x-2 mb-4 overflow-x-auto">
+                {classes.map((cls) => (
+                  <button
+                    key={cls}
+                    onClick={() => setActiveClass(cls)}
+                    className={`px-4 py-2 rounded-lg border ${
+                      activeClass === cls
+                        ? "bg-blue-500 text-white"
+                        : "bg-gray-200"
+                    }`}
                   >
-                    {cell || "-"}
-                  </td>
+                    {cls}
+                  </button>
                 ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full border border-gray-300 text-center">
+                  <thead>
+                    <tr className="bg-gray-100 border-b border-gray-300">
+                      <th className="py-3 px-4 border-r">বার</th>
+                      <th className="py-3 px-4 border-r">সন্ধ্যা ৬:৩০ টা</th>
+                      <th className="py-3 px-4">রাত ৮:৩০টা</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {routines[activeClass]?.map((row, index) => (
+                      <tr key={index} className="border-b border-gray-300">
+                        {row.map((cell, idx) => (
+                          <td
+                            key={idx}
+                            className="py-3 px-4 border-r last:border-r-0"
+                          >
+                            {cell || "-"}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <div>
