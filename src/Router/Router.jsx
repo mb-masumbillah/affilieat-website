@@ -6,6 +6,7 @@ import NineMonthPage from "../Page/NineMonthPage";
 import SixMonthPage from "../Page/SixMonthPage";
 import SevenMonthPage from "../Page/SevenMonthPage";
 import TenMonthPage from "../Page/TenMonthPage";
+import HelpCenter from "../Page/HelpCenter";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
         path: "/classTen",
         element: <TenMonthPage></TenMonthPage>,
       },
+      {
+        path: "/helpCenter",
+        element: <HelpCenter></HelpCenter>
+      }
     ],
   },
 ]);

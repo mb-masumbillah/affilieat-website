@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const phoneNumber = "+8801726374365";
   return (
-    <div className="lg:mt-24 mt-12 relative z-40">
+    <div className="lg:mt-14 mt-12 relative z-40">
       <footer className="bg-[#403f3f] text-white pt-8">
         <div className="max-w-screen-xl mx-auto px-10 lg:px-4">
           <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
@@ -103,7 +103,10 @@ const Footer = () => {
                   >
                     📌 ৯ম শ্রেণি - অনলাইন ব্যাচ ২০২৫
                   </Link>
-                  <Link to="/classTen" className="hover:underline hover:text-green-600">
+                  <Link
+                    to="/classTen"
+                    className="hover:underline hover:text-green-600"
+                  >
                     📌 ১০ম শ্রেণি - অনলাইন ব্যাচ ২০২৫
                   </Link>
                 </div>
@@ -128,7 +131,10 @@ const Footer = () => {
                   HSC & SSC কোর্সসমূহ
                 </h3>
                 <div className="text-gray-400 flex flex-col text-sm mt-2 space-y-1">
-                  <Link to="/classTen" className="hover:underline hover:text-green-600">
+                  <Link
+                    to="/classTen"
+                    className="hover:underline hover:text-green-600"
+                  >
                     📌 SSC 26 এর কোর্সসমূহ
                   </Link>
                   <Link className="hover:underline hover:text-green-600">
@@ -142,8 +148,8 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="bg-black text-center text-white py-2 mt-6">
-          Copyright © promo10MSshop 2025. All Rights Reserved. <br /> Developed by{" "}
-          <span className="font-bold text-yellow-300">Masum Billah</span>
+          Copyright © promo10MSshop 2025. All Rights Reserved. <br /> Developed
+          by <span className="font-bold text-yellow-300">Masum Billah</span>
         </div>
 
         {/* WhatsApp Button */}
@@ -152,27 +158,35 @@ const Footer = () => {
             href={`https://wa.me/${phoneNumber}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed lg:bottom-36 bottom-[100px] z-50 lg:right-[19rem] right-1 bg-green-600 rounded-full p-2 animate-bounce"
+            className="fixed md:bottom-36 bottom-[100px] z-50 lg:right-[19rem] right-1 bg-green-600 rounded-full p-2 animate-bounce"
           >
             <img
               src="https://img.icons8.com/?size=100&id=QkXeKixybttw&format=png&color=000000"
               alt=""
-              className="lg:w-10 w-6 cursor-pointer"
+              className="md:w-10 w-6 cursor-pointer"
               title="যোগাযোগ করুন +880 1726374365"
             />
           </a>
-          <Link target="_blank" to="https://www.facebook.com/share/1AVaDAZxwG/" className="fixed z-50 lg:bottom-20 bottom-[53px] lg:right-[19rem] right-1 bg-[#5266fd] rounded-full p-2 animate-bounce">
+          <Link
+            target="_blank"
+            to="https://www.facebook.com/share/1AVaDAZxwG/"
+            className="fixed z-50 md:bottom-20 bottom-[53px] lg:right-[19rem] right-1 bg-[#5266fd] rounded-full p-2 animate-bounce"
+          >
             <img
               src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
               alt=""
-              className="lg:w-10 w-6"
+              className="md:w-10 w-6 cursor-pointer"
             />
           </Link>
-          <Link target="_blank" to="https://www.youtube.com/@user-ty1eg1lf1o" className="fixed lg:bottom-4 bottom-2 z-50 lg:right-[19rem] right-1 bg-red-700 rounded-full p-2 animate-bounce">
+          <Link
+            target="_blank"
+            to="https://www.youtube.com/@user-ty1eg1lf1o"
+            className="fixed md:bottom-4 bottom-2 z-50 lg:right-[19rem] right-1 bg-red-700 rounded-full p-2 animate-bounce"
+          >
             <img
               src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000"
               alt=""
-              className="lg:w-10 w-6"
+              className="md:w-10 w-6 cursor-pointer"
             />
           </Link>
         </div>

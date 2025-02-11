@@ -68,7 +68,7 @@ export default function Navbar() {
                 <AiOutlineDown className="text-gray-500 transition-transform duration-300 group-hover:rotate-180" />
               </button>
               <div className="absolute -left-[10px] mt-0 pt-[24px] w-52 bg-white shadow-lg opacity-0 scale-y-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-in-out origin-top rounded-b-md z-50">
-                <div className="text-black">
+                <div className="text-black flex flex-col">
                   <Link to="/classTen" className={liStyle}>SSC 26</Link>
                   <Link className={liStyle}>HSC 26</Link>
                 </div>
@@ -89,9 +89,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <button className="bg-green-600 text-white md:px-4 md:py-2 p-1  text-xs md:text-xl rounded-md">
+          <Link to="/helpCenter" className="bg-green-600 text-white md:px-4 md:py-2 p-1  text-xs md:text-xl rounded-md">
             Help Center
-          </button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button

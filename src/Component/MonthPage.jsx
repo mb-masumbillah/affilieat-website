@@ -176,10 +176,10 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
           <div className="max-w-screen-xl mx-auto">
             <Marquee className="text-xl ">
               <div className="flex gap-3">
-                <span> ৬ষ্ঠ শ্রেণি থেকে ৯ম শ্রেণির</span>
+                <span> ৬ষ্ঠ শ্রেণি থেকে ১০ম শ্রেণির</span>
                 <span className="text-green-400">
                   ১ মাস, ৩ মাস, ৬ মাস অথবা ১২ মাসের Course এর জন্য{" "}
-                  {'"কোর্সটি কিনুন"'} অপশন এ ক্লিক করুন
+                  {'"Get Discount"'} অপশন এ ক্লিক করুন
                 </span>
               </div>
             </Marquee>
@@ -292,7 +292,7 @@ const MonthPage = ({ courses, faqData, clssDes }) => {
             <div className="relative w-full h-[12.7rem]">
               <iframe
                 className="w-full h-full rounded-md"
-                src="https://www.youtube.com/embed/fGFfyRgfVCQ?si=xdxyyeBKU_L_uPmJ"
+               src="https://www.youtube.com/embed/grQFoGGQk5U?si=Bc6eJFok17lubM4u"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
