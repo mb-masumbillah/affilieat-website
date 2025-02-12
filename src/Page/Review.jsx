@@ -9,16 +9,17 @@ const Review = () => {
   const speed = 2; // চলার স্পিড
 
   const images = [
-    { img: "r1.jpg", link: "/classSeven" },
-    { img: "r2.jpg", link: "/classSeven" },
-    { img: "r3.jpg", link: "/classSeven" },
-    { img: "r4.jpg", link: "/classSeven" },
-    { img: "r5.jpg", link: "/classSeven" },
-    { img: "r6.jpg", link: "/classSeven" },
-    { img: "r7.jpg", link: "/classSeven" },
-    { img: "r8.jpg", link: "/classSeven" },
-    { img: "r9.jpg", link: "/classSeven" },
-    { img: "r10.jpg", link: "/classSeven" },
+    { img: "r11.jpg",link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r1.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r2.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r3.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r4.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r5.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r6.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r7.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r8.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r9.jpg", link: "https://facebook.com/groups/1553731405509665/" },
+    { img: "r10.jpg", link: "https://facebook.com/groups/1553731405509665/" },
   ];
 
   useEffect(() => {
@@ -57,6 +58,7 @@ const Review = () => {
             <Link
               to={item.link}
               key={index}
+              target="_blank"
               className="h-[600px] w-[300px] rounded-lg shadow-md flex-shrink-0 overflow-hidden"
             >
               <img

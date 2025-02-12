@@ -23,12 +23,12 @@ export default function Navbar() {
     <div>
       {/* Sticky navbar */}
       <nav
-        className={`bg-white shadow-md px-6 py-4 ${
+        className={`bg-white shadow-md px-6 py-2 ${
           isSticky ? "fixed top-0 w-full z-50" : ""
         }`}
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-          <div className="lg:text-2xl font-bold text-black">10MS DISCOUNT</div>
+          <div className="lg:text-2xl font-bold text-black"><img src="logo.png" alt="" className="w-36"/></div>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-6">

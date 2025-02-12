@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row lg:flex-col gap-5">
               <div>
                 <h2 className="text-2xl font-bold flex items-center">
-                  <span className="text-red-500">10</span>MS DISCOUNT
+                  <img src="ms.png" alt="" className="w-44" />
                 </h2>
                 <p className="flex items-center mt-4">
                   <MapPin className="mr-2 text-red-500" /> Rangpur Divition,
@@ -24,38 +24,50 @@ const Footer = () => {
                 <p className="flex items-center mt-2">📞 +880 1726374365</p>
               </div>
               <div className="grid grid-cols-2 gap-3 mt-4 w-64">
-                <button className="bg-black gap-2 hover:text-blue-400 text-white px-2 rounded-md flex items-center">
+                <Link
+                  to="https://www.facebook.com/share/1AVaDAZxwG/"
+                  className="bg-black gap-2 hover:text-blue-400 text-white px-2 rounded-md flex items-center"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
                     alt=""
                     className="w-8"
                   />
                   <span>Account</span>
-                </button>
-                <button className="bg-black gap-2 hover:text-blue-400 text-white px-2 rounded-md flex items-center">
+                </Link>
+                <Link
+                  to="https://facebook.com/groups/1553731405509665/"
+                  className="bg-black gap-2 hover:text-blue-400 text-white px-2 rounded-md flex items-center"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
                     alt=""
                     className="w-8"
                   />
                   <span>Group</span>
-                </button>
-                <button className="bg-black gap-2 hover:text-blue-400 text-white px-2 rounded-md flex items-center">
+                </Link>
+                <Link
+                  to="https://www.facebook.com/people/Muntasin-Billa/61571193290759/"
+                  className="bg-black gap-2 hover:text-blue-400 text-white px-2 rounded-md flex items-center"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
                     alt=""
                     className="w-8"
                   />
                   <span>Page</span>
-                </button>
-                <button className="bg-black gap-2 hover:text-red-400 text-white px-2 rounded-md flex items-center">
+                </Link>
+                <Link
+                  to="https://www.youtube.com/@user-ty1eg1lf1o"
+                  className="bg-black gap-2 hover:text-red-400 text-white px-2 rounded-md flex items-center"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000"
                     alt=""
                     className="w-8"
                   />
                   <span>Youtube</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -137,13 +149,22 @@ const Footer = () => {
                   >
                     📌 SSC 26 এর কোর্সসমূহ
                   </Link>
-                  <Link to="/hsc" className="hover:underline hover:text-green-600">
+                  <Link
+                    to="/hsc"
+                    className="hover:underline hover:text-green-600"
+                  >
                     📌 HSC 26 এর কোর্সসমূহ
                   </Link>
-                  <Link to="/allSkills" className="hover:underline hover:text-green-600">
+                  <Link
+                    to="/allSkills"
+                    className="hover:underline hover:text-green-600"
+                  >
                     📌 সকল স্কিলস এর কোর্সসমূহ
                   </Link>
-                  <Link to="/freeSkills" className="hover:underline hover:text-green-600">
+                  <Link
+                    to="/freeSkills"
+                    className="hover:underline hover:text-green-600"
+                  >
                     📌 ফ্রি কোর্সসমূহ এর কোর্সসমূহ
                   </Link>
                 </div>
