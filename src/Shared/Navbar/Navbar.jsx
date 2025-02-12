@@ -28,7 +28,9 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-          <div className="lg:text-2xl font-bold text-black"><img src="logo.png" alt="" className="w-36"/></div>
+          <Link to="/" className="lg:text-2xl font-bold text-black">
+            <img src="logo.png" alt="" className="w-36" />
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-6">
@@ -69,8 +71,12 @@ export default function Navbar() {
               </button>
               <div className="absolute -left-[10px] mt-0 pt-[24px] w-52 bg-white shadow-lg opacity-0 scale-y-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-in-out origin-top rounded-b-md z-50">
                 <div className="text-black flex flex-col">
-                  <Link to="/classTen" className={liStyle}>SSC 26</Link>
-                  <Link to="/hsc" className={liStyle}>HSC 26</Link>
+                  <Link to="/classTen" className={liStyle}>
+                    SSC 26
+                  </Link>
+                  <Link to="/hsc" className={liStyle}>
+                    HSC 26
+                  </Link>
                 </div>
               </div>
             </div>
@@ -83,14 +89,21 @@ export default function Navbar() {
               </button>
               <div className="absolute -left-[10px] mt-0 pt-[24px] w-44 bg-white shadow-lg opacity-0 scale-y-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-in-out origin-top rounded-b-md z-50">
                 <div className="text-black flex flex-col">
-                  <Link to="allSkills" className={`-px-2 ${liStyle}`}>সকল স্কিলস</Link>
-                  <Link to="freeSkills" className={`-px-2 ${liStyle}`}>ফ্রি কোর্সসমূহ</Link>
+                  <Link to="allSkills" className={`-px-2 ${liStyle}`}>
+                    সকল স্কিলস
+                  </Link>
+                  <Link to="freeSkills" className={`-px-2 ${liStyle}`}>
+                    ফ্রি কোর্সসমূহ
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
 
-          <Link to="/helpCenter" className="bg-green-600 text-white md:px-4 md:py-2 p-1  text-xs md:text-xl rounded-md">
+          <Link
+            to="/helpCenter"
+            className="bg-green-600 text-white md:px-4 md:py-2 p-1  text-xs md:text-xl rounded-md"
+          >
             Help Center
           </Link>
 
@@ -133,10 +146,18 @@ export default function Navbar() {
             <Link to="/classTen" className={liStyle}>
               Class 10
             </Link>
-            <Link to="/classTen" className={liStyle}>SSC 26</Link>
-            <Link to="/hsc" className={liStyle}>HSC 26</Link>
-            <Link to="allSkills" className={`-px-2 ${liStyle}`}>সকল স্কিলস</Link>
-            <Link to="freeSkills" className={`-px-2 ${liStyle}`}>ফ্রি কোর্সসমূহ</Link>
+            <Link to="/classTen" className={liStyle}>
+              SSC 26
+            </Link>
+            <Link to="/hsc" className={liStyle}>
+              HSC 26
+            </Link>
+            <Link to="allSkills" className={`-px-2 ${liStyle}`}>
+              সকল স্কিলস
+            </Link>
+            <Link to="freeSkills" className={`-px-2 ${liStyle}`}>
+              ফ্রি কোর্সসমূহ
+            </Link>
           </div>
         </div>
       </nav>

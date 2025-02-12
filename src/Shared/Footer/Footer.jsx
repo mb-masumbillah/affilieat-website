@@ -11,9 +11,9 @@ const Footer = () => {
             {/* Logo and Contact */}
             <div className="flex flex-col md:flex-row lg:flex-col gap-5">
               <div>
-                <h2 className="text-2xl font-bold flex items-center">
+                <Link to="/" className="text-2xl font-bold flex items-center">
                   <img src="ms.png" alt="" className="w-44" />
-                </h2>
+                </Link>
                 <p className="flex items-center mt-4">
                   <MapPin className="mr-2 text-red-500" /> Rangpur Divition,
                   Bangladesh
