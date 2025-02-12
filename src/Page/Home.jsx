@@ -14,15 +14,15 @@ const Home = () => {
       <CourseSlider></CourseSlider>
       <Review></Review>
 
-  <div className="lg:mt-14 mt-7 border-4 border-red-500">
-  <iframe
-        className="w-full lg:h-[500px]"
-        src="https://www.youtube.com/embed/SUjJages144?si=ujoEhOV6yriFvct-"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-  </div>
+      <div className="lg:mt-14 mt-7 border-4 border-red-500">
+        <iframe
+          className="w-full lg:h-[500px] md:h-[300px] h-[200px]"
+          src="https://www.youtube.com/embed/SUjJages144?si=ujoEhOV6yriFvct-"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   );
 };

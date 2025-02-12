@@ -135,7 +135,8 @@ export default function Navbar() {
             </Link>
             <Link to="/classTen" className={liStyle}>SSC 26</Link>
             <Link to="/hsc" className={liStyle}>HSC 26</Link>
-            <Link className={liStyle}>English Grammar</Link>
+            <Link to="allSkills" className={`-px-2 ${liStyle}`}>সকল স্কিলস</Link>
+            <Link to="freeSkills" className={`-px-2 ${liStyle}`}>ফ্রি কোর্সসমূহ</Link>
           </div>
         </div>
       </nav>

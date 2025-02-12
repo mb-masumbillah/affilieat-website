@@ -7,7 +7,7 @@ const HelpCenter = () => {
   return (
     <div className="max-w-3xl mx-auto lg:p-6 p-2 bg-white rounded-2xl shadow-lg mt-20 border">
       <h2 className="text-2xl font-bold text-center mb-6">Contact Us</h2>
-      <div className="">
+      <div className="flex justify-between flex-col md:flex-row lg:flex-col">
         <div className="space-y-4">
           <p className="flex items-center gap-2">
             <Mail className="w-5 h-5 text-blue-500" /> promo10ms@gmail.com

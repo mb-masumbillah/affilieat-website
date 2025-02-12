@@ -9,14 +9,14 @@ const Banner = () => {
       </div>
       {/* Content */}
       <div className="text-black space-y-2 lg:pl-8 px-1 mt-16">
-        <h1 className="lg:text-4xl text-lg font-bold text-black inline-block bg-clip-text">
+        <h1 className="lg:text-4xl text-lg md:text-2xl font-bold text-black inline-block bg-clip-text">
           10MS Discount – প্রোমো কোড ব্যবহার করুন
         </h1>
-        <p className="font-bold lg:pt-5 lg:text-lg text-xs">
+        <p className="font-bold lg:pt-5 md:text-lg text-xs">
           আপনার পছন্দের কোর্সে বিশেষ ছাড় পেতে নিচের নির্দেশনা অনুসরণ করুন : 😊
         </p>
         {/* Steps */}
-        <div className="space-y-2 text-left text-xs lg:text-base rounded-lg pt-3">
+        <div className="space-y-2 text-left text-xs md:text-base rounded-lg pt-3">
           <p>
             👉 <strong>{'"ডিসকাউন্ট"'}</strong> অপশনে ক্লিক করুন।
           </p>
@@ -35,7 +35,7 @@ const Banner = () => {
         </div>
 
         {/* Help Section */}
-        <div className="text-lg flex flex-col items-center lg:max-w-xl max-w-md">
+        <div className="text-lg flex flex-col items-center md:max-w-xl max-w-md">
           <div className="flex lg:flex-nowrap gap-2 pt-2">
             <Link target="_blank" to="https://www.facebook.com/share/1AVaDAZxwG/" className="bg-black p-1 gap-2 hover:text-blue-400 text-xs lg:text-base text-white lg:px-2 lg:py-1 rounded-md flex items-center">
               <img

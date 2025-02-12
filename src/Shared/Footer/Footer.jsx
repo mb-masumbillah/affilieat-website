@@ -164,35 +164,35 @@ const Footer = () => {
             href={`https://wa.me/${phoneNumber}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed md:bottom-36 bottom-[100px] z-50 lg:right-[19rem] right-1 bg-green-600 rounded-full p-2 animate-bounce"
+            className="fixed lg:bottom-40 md:bottom-44 bottom-[100px] z-50 lg:right-[19rem] md:right-10 right-1 bg-green-600 rounded-full p-2 animate-bounce"
           >
             <img
               src="https://img.icons8.com/?size=100&id=QkXeKixybttw&format=png&color=000000"
               alt=""
-              className="md:w-10 w-6 cursor-pointer"
+              className="lg:w-10 md:w-14 w-6 cursor-pointer"
               title="যোগাযোগ করুন +880 1726374365"
             />
           </a>
           <Link
             target="_blank"
             to="https://www.facebook.com/share/1AVaDAZxwG/"
-            className="fixed z-50 md:bottom-20 bottom-[53px] lg:right-[19rem] right-1 bg-[#5266fd] rounded-full p-2 animate-bounce"
+            className="fixed z-50 lg:bottom-20  md:bottom-24 bottom-[53px] lg:right-[19rem] md:right-10 right-1 bg-[#5266fd] rounded-full p-2 animate-bounce"
           >
             <img
               src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000"
               alt=""
-              className="md:w-10 w-6 cursor-pointer"
+              className="lg:w-10 md:w-14 w-6 cursor-pointer"
             />
           </Link>
           <Link
             target="_blank"
             to="https://www.youtube.com/@user-ty1eg1lf1o"
-            className="fixed md:bottom-4 bottom-2 z-50 lg:right-[19rem] right-1 bg-red-700 rounded-full p-2 animate-bounce"
+            className="fixed md:bottom-4 bottom-2 z-50 lg:right-[19rem] md:right-10 right-1 bg-red-700 rounded-full p-2 animate-bounce"
           >
             <img
               src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000"
               alt=""
-              className="md:w-10 w-6 cursor-pointer"
+              className="lg:w-10 md:w-14 w-6 cursor-pointer"
             />
           </Link>
         </div>
