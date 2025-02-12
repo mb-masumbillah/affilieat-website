@@ -82,9 +82,10 @@ export default function Navbar() {
                 <AiOutlineDown className="text-gray-500 transition-transform duration-300 group-hover:rotate-180" />
               </button>
               <div className="absolute -left-[10px] mt-0 pt-[24px] w-44 bg-white shadow-lg opacity-0 scale-y-95 translate-y-2 invisible group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-in-out origin-top rounded-b-md z-50">
-                <ul className="text-black">
-                  <li className={`-px-2 ${liStyle}`}>English Grammar</li>
-                </ul>
+                <div className="text-black flex flex-col">
+                  <Link to="allSkills" className={`-px-2 ${liStyle}`}>সকল স্কিলস</Link>
+                  <Link to="freeSkills" className={`-px-2 ${liStyle}`}>ফ্রি কোর্সসমূহ</Link>
+                </div>
               </div>
             </div>
           </div>

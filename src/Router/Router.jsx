@@ -8,6 +8,8 @@ import SevenMonthPage from "../Page/SevenMonthPage";
 import TenMonthPage from "../Page/TenMonthPage";
 import HelpCenter from "../Page/HelpCenter";
 import HSC from "../Page/Hsc";
+import AllSkills from "../Page/AllSkills";
+import FreeCourse from "../Page/FreeCourse";
 
 export const router = createBrowserRouter([
   {
@@ -40,12 +42,20 @@ export const router = createBrowserRouter([
       },
       {
         path: "/helpCenter",
-        element: <HelpCenter></HelpCenter>
+        element: <HelpCenter></HelpCenter>,
       },
       {
         path: "/hsc",
-        element: <HSC></HSC>
-      }
+        element: <HSC></HSC>,
+      },
+      {
+        path: "/allSkills",
+        element: <AllSkills></AllSkills>,
+      },
+      {
+        path: "/freeSkills",
+        element: <FreeCourse></FreeCourse>,
+      },
     ],
   },
 ]);

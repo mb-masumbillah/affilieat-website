@@ -128,7 +128,7 @@ const Footer = () => {
               {/* HSC & SSC Courses */}
               <div>
                 <h3 className="text-lg font-semibold border-b border-gray-600 pb-2">
-                  HSC & SSC কোর্সসমূহ
+                  HSC , SSC & Skills কোর্সসমূহ
                 </h3>
                 <div className="text-gray-400 flex flex-col text-sm mt-2 space-y-1">
                   <Link
@@ -137,8 +137,14 @@ const Footer = () => {
                   >
                     📌 SSC 26 এর কোর্সসমূহ
                   </Link>
-                  <Link className="hover:underline hover:text-green-600">
+                  <Link to="/hsc" className="hover:underline hover:text-green-600">
                     📌 HSC 26 এর কোর্সসমূহ
+                  </Link>
+                  <Link to="/allSkills" className="hover:underline hover:text-green-600">
+                    📌 সকল স্কিলস এর কোর্সসমূহ
+                  </Link>
+                  <Link to="/freeSkills" className="hover:underline hover:text-green-600">
+                    📌 ফ্রি কোর্সসমূহ এর কোর্সসমূহ
                   </Link>
                 </div>
               </div>
